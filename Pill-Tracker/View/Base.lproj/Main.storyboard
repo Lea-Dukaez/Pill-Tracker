@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Handlee-Regular.ttf">
+            <string>Handlee-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pill_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Dw5-gP-6wz">
+                                <rect key="frame" x="0.0" y="129" width="414" height="733"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pc0-2S-jhG" userLabel="DateView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lundi 4 mai" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d38-qT-Qll">
+                                        <rect key="frame" x="0.0" y="10" width="414" height="60"/>
+                                        <fontDescription key="fontDescription" name="Handlee-Regular" family="Handlee" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="d38-qT-Qll" secondAttribute="trailing" id="GXl-Cf-Wve"/>
+                                    <constraint firstAttribute="bottom" secondItem="d38-qT-Qll" secondAttribute="bottom" constant="10" id="GZn-fu-epD"/>
+                                    <constraint firstItem="d38-qT-Qll" firstAttribute="leading" secondItem="Pc0-2S-jhG" secondAttribute="leading" id="PuO-zF-Vj6"/>
+                                    <constraint firstItem="d38-qT-Qll" firstAttribute="top" secondItem="Pc0-2S-jhG" secondAttribute="top" constant="10" id="etV-cf-P1b"/>
+                                    <constraint firstAttribute="height" constant="80" id="yW8-2P-yAj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Pc0-2S-jhG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="675-ts-hck"/>
+                            <constraint firstItem="Dw5-gP-6wz" firstAttribute="top" secondItem="Pc0-2S-jhG" secondAttribute="bottom" constant="5" id="UCl-gC-VtV"/>
+                            <constraint firstItem="Dw5-gP-6wz" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="VH4-l9-vqs"/>
+                            <constraint firstItem="Dw5-gP-6wz" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="cz1-3W-itg"/>
+                            <constraint firstItem="Dw5-gP-6wz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fdI-A8-c5D"/>
+                            <constraint firstItem="Pc0-2S-jhG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kvx-8J-u1p"/>
+                            <constraint firstItem="Pc0-2S-jhG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="laM-sh-ybq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="d38-qT-Qll" id="7Fq-Gr-ZmP"/>
+                        <outlet property="tableView" destination="Dw5-gP-6wz" id="GWS-N4-xnc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="100.44642857142857"/>
+        </scene>
+    </scenes>
+</document>
