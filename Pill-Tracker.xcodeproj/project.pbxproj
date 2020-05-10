@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28237E3B1801183D5471577D /* Pods_Pill_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC009144FF35435EA4A7FA39 /* Pods_Pill_Tracker.framework */; };
 		DB445507246040B8008D4398 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB445506246040B8008D4398 /* AppDelegate.swift */; };
 		DB445509246040B8008D4398 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB445508246040B8008D4398 /* SceneDelegate.swift */; };
 		DB44550B246040B8008D4398 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44550A246040B8008D4398 /* ViewController.swift */; };
@@ -16,11 +17,14 @@
 		DB44551B24604465008D4398 /* Handlee-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB44551A24604465008D4398 /* Handlee-Regular.ttf */; };
 		DB4455242460460A008D4398 /* CapsuleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4455222460460A008D4398 /* CapsuleCell.swift */; };
 		DB4455252460460A008D4398 /* CapsuleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB4455232460460A008D4398 /* CapsuleCell.xib */; };
-		DB44552724604986008D4398 /* Capsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44552624604986008D4398 /* Capsule.swift */; };
-		DB44552C24607605008D4398 /* DailyCapsuleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44552B24607605008D4398 /* DailyCapsuleManager.swift */; };
+		DB761099246444A900F2E9CC /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DB761097246444A900F2E9CC /* DataModel.xcdatamodeld */; };
+		DB76109B2464632700F2E9CC /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB76109A2464632700F2E9CC /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0BBF7532B8CCA7E3230EBE50 /* Pods-Pill-Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pill-Tracker.release.xcconfig"; path = "Target Support Files/Pods-Pill-Tracker/Pods-Pill-Tracker.release.xcconfig"; sourceTree = "<group>"; };
+		4F734CAC4EA00C40BFF777CE /* Pods-Pill-Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pill-Tracker.debug.xcconfig"; path = "Target Support Files/Pods-Pill-Tracker/Pods-Pill-Tracker.debug.xcconfig"; sourceTree = "<group>"; };
+		CC009144FF35435EA4A7FA39 /* Pods_Pill_Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pill_Tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB445503246040B8008D4398 /* Pill-Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pill-Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB445506246040B8008D4398 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB445508246040B8008D4398 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,8 +36,8 @@
 		DB44551A24604465008D4398 /* Handlee-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Handlee-Regular.ttf"; sourceTree = "<group>"; };
 		DB4455222460460A008D4398 /* CapsuleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleCell.swift; sourceTree = "<group>"; };
 		DB4455232460460A008D4398 /* CapsuleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CapsuleCell.xib; sourceTree = "<group>"; };
-		DB44552624604986008D4398 /* Capsule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capsule.swift; sourceTree = "<group>"; };
-		DB44552B24607605008D4398 /* DailyCapsuleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCapsuleManager.swift; sourceTree = "<group>"; };
+		DB761098246444A900F2E9CC /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		DB76109A2464632700F2E9CC /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28237E3B1801183D5471577D /* Pods_Pill_Tracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E9231985A30A8B77A9C49B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC009144FF35435EA4A7FA39 /* Pods_Pill_Tracker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F43275B7A3BECF7000C98F1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F734CAC4EA00C40BFF777CE /* Pods-Pill-Tracker.debug.xcconfig */,
+				0BBF7532B8CCA7E3230EBE50 /* Pods-Pill-Tracker.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DB4454FA246040B8008D4398 = {
 			isa = PBXGroup;
 			children = (
 				DB445505246040B8008D4398 /* Pill-Tracker */,
 				DB445504246040B8008D4398 /* Products */,
+				7F43275B7A3BECF7000C98F1 /* Pods */,
+				3E9231985A30A8B77A9C49B0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +99,7 @@
 				DB44550F246040BD008D4398 /* Assets.xcassets */,
 				DB445511246040BD008D4398 /* LaunchScreen.storyboard */,
 				DB445514246040BD008D4398 /* Info.plist */,
+				DB76109A2464632700F2E9CC /* Constant.swift */,
 			);
 			path = "Pill-Tracker";
 			sourceTree = "<group>";
@@ -108,8 +133,7 @@
 		DB4455282460498E008D4398 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				DB44552624604986008D4398 /* Capsule.swift */,
-				DB44552B24607605008D4398 /* DailyCapsuleManager.swift */,
+				DB761097246444A900F2E9CC /* DataModel.xcdatamodeld */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -121,9 +145,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB445517246040BD008D4398 /* Build configuration list for PBXNativeTarget "Pill-Tracker" */;
 			buildPhases = (
+				116050D3D63C9E1667964480 /* [CP] Check Pods Manifest.lock */,
 				DB4454FF246040B8008D4398 /* Sources */,
 				DB445500246040B8008D4398 /* Frameworks */,
 				DB445501246040B8008D4398 /* Resources */,
+				7855BF5685BA32BEA659F8E3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -182,14 +208,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		116050D3D63C9E1667964480 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pill-Tracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7855BF5685BA32BEA659F8E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pill-Tracker/Pods-Pill-Tracker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pill-Tracker/Pods-Pill-Tracker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pill-Tracker/Pods-Pill-Tracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DB4454FF246040B8008D4398 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB76109B2464632700F2E9CC /* Constant.swift in Sources */,
 				DB44550B246040B8008D4398 /* ViewController.swift in Sources */,
-				DB44552C24607605008D4398 /* DailyCapsuleManager.swift in Sources */,
-				DB44552724604986008D4398 /* Capsule.swift in Sources */,
+				DB761099246444A900F2E9CC /* DataModel.xcdatamodeld in Sources */,
 				DB4455242460460A008D4398 /* CapsuleCell.swift in Sources */,
 				DB445507246040B8008D4398 /* AppDelegate.swift in Sources */,
 				DB445509246040B8008D4398 /* SceneDelegate.swift in Sources */,
@@ -334,15 +402,17 @@
 		};
 		DB445518246040BD008D4398 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F734CAC4EA00C40BFF777CE /* Pods-Pill-Tracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MU9Q6F5GDR;
 				INFOPLIST_FILE = "Pill-Tracker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.lea-dk.Pill-Tracker";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.malfouf.Pill-Tracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -351,15 +421,17 @@
 		};
 		DB445519246040BD008D4398 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BBF7532B8CCA7E3230EBE50 /* Pods-Pill-Tracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MU9Q6F5GDR;
 				INFOPLIST_FILE = "Pill-Tracker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.lea-dk.Pill-Tracker";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.malfouf.Pill-Tracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -388,6 +460,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DB761097246444A900F2E9CC /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DB761098246444A900F2E9CC /* DataModel.xcdatamodel */,
+			);
+			currentVersion = DB761098246444A900F2E9CC /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DB4454FB246040B8008D4398 /* Project object */;
 }

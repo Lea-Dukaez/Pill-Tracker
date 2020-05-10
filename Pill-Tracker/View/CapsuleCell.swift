@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import SwipeCellKit
 
-class CapsuleCell: UITableViewCell {
+class CapsuleCell: SwipeTableViewCell {
 
     @IBOutlet weak var nbLabel: UILabel!
     @IBOutlet weak var capsuleLabel: UILabel!

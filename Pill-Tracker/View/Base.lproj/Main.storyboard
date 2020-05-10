@@ -33,14 +33,27 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lma-Xv-tob">
+                                        <rect key="frame" x="369" y="28" width="25" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="3QZ-JH-uu3"/>
+                                            <constraint firstAttribute="height" constant="24" id="iQu-EP-Cf8"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="addPill:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xrL-T2-p2r"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="d38-qT-Qll" secondAttribute="trailing" id="GXl-Cf-Wve"/>
                                     <constraint firstAttribute="bottom" secondItem="d38-qT-Qll" secondAttribute="bottom" constant="10" id="GZn-fu-epD"/>
+                                    <constraint firstItem="lma-Xv-tob" firstAttribute="centerY" secondItem="Pc0-2S-jhG" secondAttribute="centerY" id="NqG-eJ-1bi"/>
                                     <constraint firstItem="d38-qT-Qll" firstAttribute="leading" secondItem="Pc0-2S-jhG" secondAttribute="leading" id="PuO-zF-Vj6"/>
                                     <constraint firstItem="d38-qT-Qll" firstAttribute="top" secondItem="Pc0-2S-jhG" secondAttribute="top" constant="10" id="etV-cf-P1b"/>
                                     <constraint firstAttribute="height" constant="80" id="yW8-2P-yAj"/>
+                                    <constraint firstAttribute="trailing" secondItem="lma-Xv-tob" secondAttribute="trailing" constant="20" id="yoH-nM-cs6"/>
                                 </constraints>
                             </view>
                         </subviews>
