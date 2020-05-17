@@ -19,6 +19,10 @@
 		DB4455252460460A008D4398 /* CapsuleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB4455232460460A008D4398 /* CapsuleCell.xib */; };
 		DB761099246444A900F2E9CC /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DB761097246444A900F2E9CC /* DataModel.xcdatamodeld */; };
 		DB76109B2464632700F2E9CC /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB76109A2464632700F2E9CC /* Constant.swift */; };
+		DBC25DC32471B69C0017B5AF /* AddPillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC25DC22471B69C0017B5AF /* AddPillViewController.swift */; };
+		DBC25DC52471BD5C0017B5AF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC25DC42471BD5C0017B5AF /* DetailViewController.swift */; };
+		DBC25DC72471C1D70017B5AF /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC25DC62471C1D70017B5AF /* Category.swift */; };
+		DBC25DC92471E1C10017B5AF /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC25DC82471E1C10017B5AF /* Detail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,10 @@
 		DB4455232460460A008D4398 /* CapsuleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CapsuleCell.xib; sourceTree = "<group>"; };
 		DB761098246444A900F2E9CC /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		DB76109A2464632700F2E9CC /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		DBC25DC22471B69C0017B5AF /* AddPillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPillViewController.swift; sourceTree = "<group>"; };
+		DBC25DC42471BD5C0017B5AF /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		DBC25DC62471C1D70017B5AF /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		DBC25DC82471E1C10017B5AF /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				DB44550A246040B8008D4398 /* ViewController.swift */,
+				DBC25DC22471B69C0017B5AF /* AddPillViewController.swift */,
+				DBC25DC42471BD5C0017B5AF /* DetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -134,6 +144,8 @@
 			isa = PBXGroup;
 			children = (
 				DB761097246444A900F2E9CC /* DataModel.xcdatamodeld */,
+				DBC25DC62471C1D70017B5AF /* Category.swift */,
+				DBC25DC82471E1C10017B5AF /* Detail.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -255,12 +267,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBC25DC32471B69C0017B5AF /* AddPillViewController.swift in Sources */,
 				DB76109B2464632700F2E9CC /* Constant.swift in Sources */,
 				DB44550B246040B8008D4398 /* ViewController.swift in Sources */,
 				DB761099246444A900F2E9CC /* DataModel.xcdatamodeld in Sources */,
 				DB4455242460460A008D4398 /* CapsuleCell.swift in Sources */,
+				DBC25DC72471C1D70017B5AF /* Category.swift in Sources */,
+				DBC25DC92471E1C10017B5AF /* Detail.swift in Sources */,
 				DB445507246040B8008D4398 /* AppDelegate.swift in Sources */,
 				DB445509246040B8008D4398 /* SceneDelegate.swift in Sources */,
+				DBC25DC52471BD5C0017B5AF /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

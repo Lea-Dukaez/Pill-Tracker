@@ -118,71 +118,71 @@ class ViewController: UIViewController {
     
     // MARK: - Add Pill
     
-    @IBAction func addPill(_ sender: UIButton) {
-        let alert = UIAlertController(title: "Add a new pill", message: "", preferredStyle: .alert)
-        
-        let action = UIAlertAction(title: "Add", style: .default, handler: { action in
-            
-            let textFieldArray = [self.nameTextField, self.nbTextField]
-            let allHaveText = textFieldArray.allSatisfy { $0.text?.isEmpty == false }
-
-            if allHaveText{
-                let newPill = Capsule(context: self.context)
-                newPill.name = self.nameTextField.text!
-                newPill.quantity = Double(self.nbTextField.text!)!
-                newPill.leftToTake = newPill.quantity
-                
-                if self.dailyCaps.count <= K.colors.count {
-                    newPill.color = K.colors[self.dailyCaps.count]
-                } else {
-                    newPill.color = "Color1"
-                }
-
-                newPill.colorShown = newPill.color
-                self.dailyCaps.append(newPill)
-                
-                self.saveData()
-                
-            } else {
-                self.showAlert()
-            }
-
-        })
-        
-        alert.addTextField { textField in
-            textField.delegate = self
-            let heightConstraint = NSLayoutConstraint(item: textField, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 25)
-            textField.addConstraint(heightConstraint)
-            textField.placeholder = "Name"
-            self.nameTextField = textField
-        }
-        
-        alert.addTextField { textField in
-            textField.delegate = self
-            let heightConstraint = NSLayoutConstraint(item: textField, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 25)
-            textField.addConstraint(heightConstraint)
-            textField.placeholder = "Quantity"
-            self.nbTextField = textField
-        }
-        
-        
-        alert.addAction(action)
-        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil))
-        self.present(alert, animated: true, completion: nil)
-    }
-    
+//    @IBAction func addPill(_ sender: UIButton) {
+//        let alert = UIAlertController(title: "Add a new pill", message: "", preferredStyle: .alert)
+//
+//        let action = UIAlertAction(title: "Add", style: .default, handler: { action in
+//
+//            let textFieldArray = [self.nameTextField, self.nbTextField]
+//            let allHaveText = textFieldArray.allSatisfy { $0.text?.isEmpty == false }
+//
+//            if allHaveText{
+//                let newPill = Capsule(context: self.context)
+//                newPill.name = self.nameTextField.text!
+//                newPill.quantity = Double(self.nbTextField.text!)!
+//                newPill.leftToTake = newPill.quantity
+//
+//                if self.dailyCaps.count <= K.colors.count {
+//                    newPill.color = K.colors[self.dailyCaps.count]
+//                } else {
+//                    newPill.color = "Color1"
+//                }
+//
+//                newPill.colorShown = newPill.color
+//                self.dailyCaps.append(newPill)
+//
+//                self.saveData()
+//
+//            } else {
+//                self.showAlert()
+//            }
+//
+//        })
+//
+//        alert.addTextField { textField in
+//            textField.delegate = self
+//            let heightConstraint = NSLayoutConstraint(item: textField, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 25)
+//            textField.addConstraint(heightConstraint)
+//            textField.placeholder = "Name"
+//            self.nameTextField = textField
+//        }
+//
+//        alert.addTextField { textField in
+//            textField.delegate = self
+//            let heightConstraint = NSLayoutConstraint(item: textField, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 25)
+//            textField.addConstraint(heightConstraint)
+//            textField.placeholder = "Quantity"
+//            self.nbTextField = textField
+//        }
+//
+//
+//        alert.addAction(action)
+//        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil))
+//        self.present(alert, animated: true, completion: nil)
+//    }
+//
     // Error alert when Add Pill TextField are incomplete
-    func showAlert() {
-        self.present(alertError, animated: true) {
-                let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissAlert))
-            self.alertError.view.superview?.subviews[0].addGestureRecognizer(tapGesture)
-        }
-    }
-    
-    @objc func dismissAlert() {
-        self.dismiss(animated: true, completion: nil)
-    }
-    
+//    func showAlert() {
+//        self.present(alertError, animated: true) {
+//                let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissAlert))
+//            self.alertError.view.superview?.subviews[0].addGestureRecognizer(tapGesture)
+//        }
+//    }
+//    
+//    @objc func dismissAlert() {
+//        self.dismiss(animated: true, completion: nil)
+//    }
+//    
     
     
     

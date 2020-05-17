@@ -10,4 +10,10 @@ struct K {
     static let colors = ["Multi-Color", "fatB-Color", "L-C-Color", "VitC-Color", "Omega3-Color", "VitD-Color", "Creatine-Color", "Mg-Color", "Glycine-Color", "Color10","Color11", "Color12", "Color13", "Color14", "Color15", "Color16"]
     
     static let colorNul = "Nul-Color"
+    
+    static let segueToAddPill = "goToAddPill"
+    static let segueToDetails = "goToDetails"
+    static let categoryType = "Type"
+    static let categoryTime = "Time"
+    static let categoryRecurrence = "Recurrence"
 }
