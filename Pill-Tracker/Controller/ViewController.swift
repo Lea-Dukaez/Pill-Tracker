@@ -23,17 +23,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
-    
-//        Capsule(name: "Multivitamine", quantity: 1, color: "Multi-Color"),
-//        Capsule(name: "Fat burner", quantity: 4, color: "fatB-Color"),
-//        Capsule(name: "L-Carnitine", quantity: 2, color: "L-C-Color"),
-//        Capsule(name: "Vitamine C", quantity: 1, color: "VitC-Color"),
-//        Capsule(name: "Omega 3", quantity: 4, color: "Omega3-Color"),
-//        Capsule(name: "Vitamine D", quantity: 1, color: "VitD-Color"),
-//        Capsule(name: "Creatine", quantity: 1, color: "Creatine-Color"),
-//        Capsule(name: "Magnesium", quantity: 2, color: "Mg-Color"),
-//        Capsule(name: "Glycine", quantity: 1, color: "Glycine-Color"),
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        tableView.reloadData()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))

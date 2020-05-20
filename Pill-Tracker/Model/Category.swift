@@ -10,5 +10,5 @@ import Foundation
 
 struct Category {
     let name: String
-    let option: String
+    var option: String
 }
